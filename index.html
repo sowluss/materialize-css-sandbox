@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -35,21 +36,204 @@
 
 <!--  FIXED ACTION BUTTON -->
 <div class="fixed-action-btn">
-        <a href="#" class="btn-floating red btn-large"><i class="large material-icons">mode_edit</i></a>
-        <ul>
-            <li><a href="#" class="btn-floating yellow btn-large"><i class="lerge material-icons">insert_chart</i></a></li>
-            <li><a href="#" class="btn-floating green btn-large"><i class="lerge material-icons">format_quote</i></a></li>
-            <li><a href="#" class="btn-floating blue btn-large"><i class="lerge material-icons">publish</i></a></li>
-            <li><a href="#" class="btn-floating orange btn-large"><i class="lerge material-icons">attach_file</i></a></li>
-        </ul>
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i></a>
+  <ul>
+    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+  </ul>
 </div>
 
-</div>
+<!-- FLAT BUTTON -->
+
+<a class="waves-effect waves-teal btn-flat">Button</a>
+
+<h1>HELPERS</h1> 
+
+  <!-- Allignment -->
+
+    <div>
+      <h5 class="left-align">Left</h5>
+    </div>
+    <div>
+      <h5 class="right-align">Right</h5>
+    </div>
+      <div>
+      <h5 class="center-align">Left</h5>
+    </div>
+ 
+    <!-- quick float classes -->
+
+    <div class="left">Left Float</div>
+    <div class="right">Right Float</div>
+
+    <div class="clearfix"></div>
+
+
+
+
+<!--  HIDE CONTENT -->
+
+<div class="hide center-align">Hidden for all devices</div>
+<div class="hide-on-small-only center-align">Hidden for mobile devices</div>
+<div class="hide-on-med-only center-align">Hidden for tablet devices</div>
+<div class="hide-on-med-and-down center-align">Hidden for tablets and smaller</div>
+<div class="hide-on-med-and-up center-align">Hidden for tablets and higher</div>
+<div class="hide-on-large-only center-align">Hidden for desktops</div>
+
+<div style="height:50px"></div>
+
+<h4 class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ea odio consectetur, fugit quod placeat ex rem enim ratione expedita culpa. Accusamus tempora architecto dignissimos vitae. Ipsam illum magnam velit.</h4>
+
+<div style="height:50px"></div>
+
+<!-- EFFECTS -->
+
+<!-- Hoverable -->
+<div class="red white-text hoverable">Hoverable Content</div>
+
+<!-- Pulse -->
+<div class="orange black-text _pulse">Pulse Content</div>
+
+<!-- Shadow -->
+<p class="z-depth-1">z-depth-1</p>
+<p class="z-depth-2">z-depth-2</p>
+<p class="z-depth-3 green white-text">z-depth-3</p>
+<p class="z-depth-4">z-depth-4</p>
+<p class="z-depth-5">z-depth-5 </p>
+
+<!-- Flow text -->
+
+<div style="height:50px"></div>
+
+<p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis quam minus dolores vero quas! Atque nam repellendus quam accusamus laudantium labore rem, laboriosam vero ducimus! Tempore recusandae id molestias.</p>
+
+<div style="height:50px"></div>
+
+<h1>IMAGES</h1> 
+
+<img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=blur-breakfast-close-up-376464.jpg&fm=jpg" class="responsive-img" alt="">
+
+<div style="height:50px"></div>
+
+<img src="https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?cs=srgb&dl=asparagus-barbecue-bbq-675951.jpg&fm=jpg" class="responsive-img circle" alt="">
+
+</div>   <!-- container ends -->
+
+<div style="height:50px"></div>
+
+<h1>NAVIGATION</h1> 
+
+<!-- NAVIGATION  -->
+
+<!-- Left logo  -->
+<nav>
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+  <!-- Right logo -->
+  <nav>
+      <div class="nav-wrapper lime darken-4">
+        <a href="#" class="brand-logo right">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+  <br>
+
+<!-- Center logo -->
+<nav>
+    <div class="nav-wrapper blue-grey darken-1">
+      <a href="#" class="brand-logo center">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <br><br>
+
+  <!-- Dropdown -->
+
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Laptops</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Desktops</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Mobiles</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper deep-purple darken-1">
+      <a href="#!" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">About</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <br><br>
+
+  <!-- Icons and buttons in NAV -->
+
+  <nav>
+      <div class="nav-wrapper grey">
+        <a href="#" class="brand-logo left">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#"><i class="material-icons">search</i></a></li>
+          <li><a href="#"><i class="material-icons left">refresh</i>Link with Left Icon</a></li>
+          <li><a class="waves-effect waves-light btn grey darken-1">Button</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br><br>
+
+<!-- SEARCHBAR -->
+<h1>SEARCHBAR</h1> 
+
+<nav>
+    <div class="nav-wrapper brown darken-1">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <div style="height:500px"></div>
 
 
     <!--JavaScript at end of body for optimized loading-->
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
    
   </body>
 </html>
