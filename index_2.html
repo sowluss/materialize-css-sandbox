@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--  CAROUSEL   -->
+        <h1>CAROUSEL</h1>
+
+        <div class="carousel">
+
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?cs=srgb&dl=cool-wallpaper-dawn-dusk-66997.jpg&fm=jpg"
+                    width="500" height="200" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?cs=srgb&dl=bright-countryside-dawn-302804.jpg&fm=jpg"
+                    width="500" height="200" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/60006/spring-tree-flowers-meadow-60006.jpeg?cs=srgb&dl=bloom-blossom-flora-60006.jpg&fm=jpg"
+                    width="500" height="200" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/589841/pexels-photo-589841.jpeg?cs=srgb&dl=autumn-daylight-fall-589841.jpg&fm=jpg"
+                    width="500" height="200" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/457883/pexels-photo-457883.jpeg?cs=srgb&dl=beach-calm-clouds-457883.jpg&fm=jpg"
+                    width="500" height="200" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/934868/pexels-photo-934868.jpeg?cs=srgb&dl=cascade-environment-forest-934868.jpg&fm=jpg"
+                    width="500" height="200" alt="">
+            </a>
+        </div>
+
+        <!-- CAROUSEL FULL SLIDER  -->
+        <h1>CAROUSEL FULL SLIDER</h1>
+        <div class="carousel carousel-slider">
+
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?cs=srgb&dl=cool-wallpaper-dawn-dusk-66997.jpg&fm=jpg"
+                    width="800" height="600" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?cs=srgb&dl=bright-countryside-dawn-302804.jpg&fm=jpg"
+                    width="800" height="600" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/60006/spring-tree-flowers-meadow-60006.jpeg?cs=srgb&dl=bloom-blossom-flora-60006.jpg&fm=jpg"
+                    width="800" height="600" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/589841/pexels-photo-589841.jpeg?cs=srgb&dl=autumn-daylight-fall-589841.jpg&fm=jpg"
+                    width="800" height="600" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/457883/pexels-photo-457883.jpeg?cs=srgb&dl=beach-calm-clouds-457883.jpg&fm=jpg"
+                    width="800" height="600" alt="">
+            </a>
+            <a href="#" class="carousel-item">
+                <img src="https://images.pexels.com/photos/934868/pexels-photo-934868.jpeg?cs=srgb&dl=cascade-environment-forest-934868.jpg&fm=jpg"
+                    width="800" height="600" alt="">
+            </a>
+        </div>
+
+        <!-- COLLAPSIBLE  -->
+        <h1>COLLAPSIBLE</h1>
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i>First
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header active">
+                    <i class="material-icons">filter_drama</i>Second
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i>Third
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
+                </div>
+            </li>
+        </ul>
+
+<!-- TOASTS -->
+
+<h1>TOASTS</h1>
+
+<!-- 'rounded' parameter not working -->
+<a onclick="M.toast({html: 'Post Saved'}, 3000, 'rounded')" class="btn">Toast!</a>
+
+
+
+
+
+    </div>
+
+
+
+    <div style="height:500px"></div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // init carousel
+            $('.carousel').carousel();
+            // init carousel slider 
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            });
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+
+</html>
