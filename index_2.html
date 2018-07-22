@@ -112,6 +112,99 @@
 <!-- 'rounded' parameter not working -->
 <a onclick="M.toast({html: 'Post Saved'}, 3000, 'rounded')" class="btn">Toast!</a>
 
+<!-- TOOLTIPS -->
+
+<h1>TOOLTIPS</h1>
+
+<a href="" class="btn tooltipped" data-position="left" data-tooltip="I am tooltip">Hover Me</a> 
+<a href="" class="btn tooltipped" data-position="top" data-tooltip="I am tooltip" data-delay="100">Hover Me</a>
+<a href="" class="btn tooltipped" data-position="bottom" data-tooltip="I am tooltip">Hover Me</a> 
+<a href="" class="btn tooltipped" data-position="right" data-tooltip="I am tooltip">Hover Me</a>
+
+
+<!-- DROPDOWNS  -->
+<h1>DROPDOWNS</h1>
+
+<a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
+
+<!-- MATERIAL BOXED -->
+
+<h1>MATERIAL BOXED</h1>
+
+<img src="http://materializecss.com/images/sample-1.jpg" alt="" class="materialboxed" data-caption="Beautiful landscape">
+
+<!-- SLIDER -->
+
+<h1>SLIDER</h1>
+
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://images.pexels.com/photos/119581/pexels-photo-119581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="580" height="250" alt="">
+        <div class="caption center-align">
+          <h3>This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://images.pexels.com/photos/163891/italy-sicily-sea-ocean-163891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="580" height="250" alt="">
+        <div class="caption left-align">
+          <h3>This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://images.pexels.com/photos/235778/pexels-photo-235778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="580" height="250" alt="">
+        <div class="caption right-align">
+          <h3>This is our tagline</h3>
+          <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+<!-- SLIDER -->
+
+<h1>MODAL</h1>
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger green" href="#modal1">Green</a>
+  <a class="waves-effect waves-light btn modal-trigger orange" href="#modal2">Orange</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="green-text">Green Modal Header</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat dolorum libero iste delectus, reprehenderit in beatae et temporibus sequi.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4 class="orange-text">Orange Modal Header</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat dolorum libero iste delectus, reprehenderit in beatae et temporibus sequi.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+<!-- SIDENAV -->
+
+<h1>SIDENAV</h1>
+
 
 
 
@@ -133,6 +226,11 @@
                 fullWidth: true
             });
             $('.collapsible').collapsible();
+            $('.tooltipped').tooltip();
+            $('.dropdown-trigger').dropdown();
+            $('.materialboxed').materialbox();
+            $('.slider').slider();
+            $('.modal').modal();
         });
     </script>
 </body>
